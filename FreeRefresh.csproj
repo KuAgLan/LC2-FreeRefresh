@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>ClassLibrary1</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>D:\项目\失落城堡2Mod</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\..\失落城堡2Mod\libs\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="AsmResolver">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AsmResolver.dll</HintPath>
+      </Reference>
+      <Reference Include="AsmResolver.DotNet">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AsmResolver.DotNet.dll</HintPath>
+      </Reference>
+      <Reference Include="AsmResolver.PE">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AsmResolver.PE.dll</HintPath>
+      </Reference>
+      <Reference Include="AsmResolver.PE.File">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AsmResolver.PE.File.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="AssetRipper.CIL">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AssetRipper.CIL.dll</HintPath>
+      </Reference>
+      <Reference Include="AssetRipper.Primitives">
+        <HintPath>..\..\..\失落城堡2Mod\libs\AssetRipper.Primitives.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Core">
+        <HintPath>..\..\..\失落城堡2Mod\libs\BepInEx.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Preloader.Core">
+        <HintPath>..\..\..\失落城堡2Mod\libs\BepInEx.Preloader.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Unity.Common">
+        <HintPath>..\..\..\失落城堡2Mod\libs\BepInEx.Unity.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx.Unity.IL2CPP">
+        <HintPath>..\..\..\失落城堡2Mod\libs\BepInEx.Unity.IL2CPP.dll</HintPath>
+      </Reference>
+      <Reference Include="Cpp2IL.Core">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Cpp2IL.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="Disarm">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Disarm.dll</HintPath>
+      </Reference>
+      <Reference Include="Gee.External.Capstone">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Gee.External.Capstone.dll</HintPath>
+      </Reference>
+      <Reference Include="Iced">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Iced.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Common">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Il2CppInterop.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Generator">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Il2CppInterop.Generator.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.HarmonySupport">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Il2CppInterop.HarmonySupport.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Runtime">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Il2CppInterop.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2Cppmscorlib">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Il2Cppmscorlib.dll</HintPath>
+      </Reference>
+      <Reference Include="LC2.Core">
+        <HintPath>..\..\..\失落城堡2Mod\libs\LC2.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="LibCpp2IL">
+        <HintPath>..\..\..\失落城堡2Mod\libs\LibCpp2IL.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Mono.Cecil.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Mdb">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Mono.Cecil.Mdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Pdb">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Mono.Cecil.Pdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Rocks">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Mono.Cecil.Rocks.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.Backports">
+        <HintPath>..\..\..\失落城堡2Mod\libs\MonoMod.Backports.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.ILHelpers">
+        <HintPath>..\..\..\失落城堡2Mod\libs\MonoMod.ILHelpers.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.RuntimeDetour">
+        <HintPath>..\..\..\失落城堡2Mod\libs\MonoMod.RuntimeDetour.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoMod.Utils">
+        <HintPath>..\..\..\失落城堡2Mod\libs\MonoMod.Utils.dll</HintPath>
+      </Reference>
+      <Reference Include="SemanticVersioning">
+        <HintPath>..\..\..\失落城堡2Mod\libs\SemanticVersioning.dll</HintPath>
+      </Reference>
+      <Reference Include="StableNameDotNet">
+        <HintPath>..\..\..\失落城堡2Mod\libs\StableNameDotNet.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Netcode.Runtime">
+        <HintPath>..\..\..\失落城堡2Mod\libs\Unity.Netcode.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\失落城堡2Mod\libs\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="WasmDisassembler">
+        <HintPath>..\..\..\失落城堡2Mod\libs\WasmDisassembler.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
